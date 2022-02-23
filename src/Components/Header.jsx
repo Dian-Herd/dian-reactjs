@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {Carousel} from 'react-bootstrap';
 import image1 from './../Images/10.jpg';
 import image2 from './../Images/9.jpg';

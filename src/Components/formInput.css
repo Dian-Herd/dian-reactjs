@@ -1,0 +1,11 @@
+span {
+    color : red;
+    font-size: 12px;
+    display: none;
+}
+input:invalid[focused = true]{
+    border-color: red;
+}
+input:invalid[focused = true] ~ span{
+    display: block;
+}
