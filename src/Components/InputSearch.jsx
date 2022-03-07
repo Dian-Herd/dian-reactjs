@@ -1,18 +1,12 @@
-import React, { Component } from 'react'
-import { InputGroup, FormControl, Container, Col, Row } from 'react-bootstrap'
+import React from 'react'
+import { FormControl, InputGroup } from 'react-bootstrap'
 
-export default class InputSearch extends Component {
-  render() {
-    return (
-      <Container className="mt-5">
-          <Row>
-              <Col md={4}>
-                <InputGroup>
-                    <FormControl placeholder="Search News" onChange={this.props.onChange} />
-                </InputGroup>
-              </Col>
-          </Row>
-      </Container>
-    )
-  }
+const InputSearch = ({onChange}) => {
+  return (
+    <InputGroup className="mb-3">
+        <FormControl onChange={onChange} />
+    </InputGroup>
+  )
 }
+
+export default InputSearch
