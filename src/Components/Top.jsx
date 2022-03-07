@@ -1,19 +1,13 @@
 import React from 'react';
-import {Navbar, Container, Nav} from 'react-bootstrap';
+import {Navbar, Container} from 'react-bootstrap';
 
 export default class Top extends React.Component{
     render(){
         return(
-            <Navbar bg='light' variant='light' expand='md'>
+            <Navbar bg='primary' variant='dark' expand='md'>
                 <Container>
                         <Navbar.Toggle aria-controls='basic-navbar-nav' />
-                        <Navbar.Brand href='#home'>Dian</Navbar.Brand>
-                        <Navbar.Collapse id='basic-navbar-nav'>
-                            <Nav className='me-auto'>
-                                <Nav.Link href='#home'>Home</Nav.Link>
-                                <Nav.Link href='#hobbies'>Hobi</Nav.Link>
-                            </Nav>
-                        </Navbar.Collapse>
+                        <Navbar.Brand href='#home'>DN App</Navbar.Brand>
                 </Container>
             </Navbar>
         )
