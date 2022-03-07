@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavbarComponent from './component/NavbarComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from './component/Home'
+import About from './component/About';
+import BettaFish from './component/BettaFish'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <NavbarComponent />
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/bettafish/*" element={<BettaFish />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
